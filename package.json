@@ -1,0 +1,24 @@
+{
+  "name": "instagram-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robin3910/instagram-crawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robin3910/instagram-crawler/issues"
+  },
+  "homepage": "https://github.com/Robin3910/instagram-crawler#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-xlsx": "^0.21.0",
+    "qs": "^6.11.0"
+  }
+}
