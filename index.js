@@ -7,7 +7,7 @@ const readline = require('readline');
 let minFansNum = 0;
 
 // 用户名文件路径，需要拷贝绝对路径
-const filePath = "F:\\WorkSpace\\ins-userinfo-crawler\\userinfo.txt";
+const filePath = "C:\\Users\\Beiens\\Desktop\\ins-userinfo-crawler\\userinfo.txt";
 
 let usernameList = [];
 let curUser = '';
@@ -81,11 +81,10 @@ function run() {
 
         })
         .catch(async function (error) {
+            // 错误后休息30s再继续下一个用户的爬取
             console.log('error info: ' + error);
-            await sleep(60000);
+            await sleep(30000);
             isRunning = false;
-            saveDataIntoExcel();
-            exit(0);
         });
 
 }
